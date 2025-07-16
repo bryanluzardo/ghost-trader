@@ -1,0 +1,48 @@
+:root {
+    --hover-botones: #00c3ffb4;
+    --gray-alpha-200: rgba(148, 148, 148, 0.3);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    border-bottom: 1px solid var(--gray-alpha-200);
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+.botones{
+    display: flex;
+    gap: 20px;
+}
+
+svg{
+    cursor: pointer;
+}
+
+li{
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    text-wrap: nowrap;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+li:hover{
+    color: black;
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--hover-botones);
+}
