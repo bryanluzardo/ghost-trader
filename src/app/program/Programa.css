@@ -1,0 +1,49 @@
+.programa {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.modulo {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.modulo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.modulo-header:hover {
+    background-color: #706f6f;
+}
+
+.flecha {
+    transition: transform 0.3s ease;
+}
+
+.flecha.abierto {
+    transform: rotate(180deg);
+}
+
+.modulo-contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+}
+
+.modulo-contenido.mostrar {
+    max-height: 500px; /* ajusta si el contenido es muy largo */
+    padding: 15px 20px;
+}
