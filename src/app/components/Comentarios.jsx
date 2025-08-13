@@ -14,13 +14,19 @@ export function Comentarios() {
   }, [])
 
   const next = () => {
-    setCurrentIndex((prev) =>
-      Math.min(prev + 1, comentarios.length - visibleCount)
-    )
+    setCurrentIndex((prevIndex) =>
+        prevIndex + 1 >= comentarios.length - visibleCount + 1
+          ? 0
+          : prevIndex + 1
+      )
   }
 
   const prev = () => {
-    setCurrentIndex((prev) => Math.max(prev - 1, 0))
+    setCurrentIndex((prevIndex) =>
+        prevIndex - 1 < 0
+          ? comentarios.length - visibleCount
+          : prevIndex - 1
+      )
   }
 
   useEffect(() => {

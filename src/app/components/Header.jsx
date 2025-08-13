@@ -20,6 +20,7 @@ export function Header () {
                 <li><Link href="/planes">Planes</Link></li>
                 <li><Link href="/program">Programa</Link></li>
                 <li><Link href="/about">Sobre Nosotros</Link></li>
+                <li><Link href="/curso">Curso</Link></li>
             </ul>
             <div className='botones'>
                 <DarkModeButton handleClick={handleClick} color={color}/>

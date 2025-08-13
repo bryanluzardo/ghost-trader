@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <main className={`${geistSans.variable} ${geistMono.variable}`}>
           {children}
-        </body>
+        </main>
       </body>
     </html>
   );
